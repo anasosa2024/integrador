@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATITAS - CONSULTORIO VETERINARIO</title>
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/essential-63/24/pet-256.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style_ing.css">
+</head>
+<body>
+
+    <header>
+        <div class="headercontainer">
+            <img id="logo" src="./fotosHeadYFooter/LOGO.png" alt="Patitas">
+            <h1 class="righteous-regular">Ingreso</h1>
+            <img id="pets" src="./fotosVeterinaria/12.png" alt="pets">
+        </div>
+    </header>
+
+    <nav>
+
+        <a href="ingresoNuevo.html" id="ingreso">Ingreso</a>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="especialidades.html">Especialidades</a>
+        <a href="plan_de_salud.html">Plan de Salud</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="profesionales.html">Profesionales</a>
+
+    </nav>
+    <div class="menu-hamburguesa">
+        <button onclick="mostrarMenu()">
+            <span class="icono-menu">≡</span>
+        </button>
+        <ul class="opciones-menu" style="display: none;">
+            <li><a href="ingresoNuevo.html">Ingreso</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="especialidades.html">Especialidades</a></li>
+            <li><a href="plan_de_salud.html">Plan de Salud</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="profesionales.html">Profesionales</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="contenido">
+            <h1 id="titulo">Ingresar</h1>
+            <form id="formulario" action="#">
+                <div class="grupo">
+                    <p>Podés ingresar con tu cuenta de:</p>
+                    <div class="inputs">
+                        <a href="./index.html">
+                            <div id="gmail">
+                                <img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Google-256.png" alt="gmail">
+                                <p>Google</p>
+                            </div>
+                        </a>                        
+                    </div>
+                    <div class="inputs">
+                        <a href="./index.html">
+                            <div id="face">
+                                <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_facebook-512.png"
+                                alt="Facebook">
+                                <p>Facebook</p>
+                            </div>
+                        </a>
+                    </div>
+                    <p>O con tu cuenta de Email</p>
+                    <div class="inputs">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Correo" id="email">
+                    </div>
+                    <div class="inputs">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Contraseña de 8 caracteres" id="password1">
+                    </div>
+                </div>
+                    <p>¿Olvidaste tu contraseña? <a href="./email.html">click aquí</a></p>
+                    <div class="btnInput">
+                        <button id="ingresar" type="submit" onclick ="validaciones()">Ingresar</button>
+                        <button id="crearCuenta" type="reset" onclick="irAInicio()">Crear cuenta</button>
+                    </div>             
+            </form>
+        </div>
+    </div>
+    <footer>
+
+        <div id="imsola">
+            <img src="./fotosHeadYFooter/imsola.png" alt="mascotas">
+        </div>
+        <div class="infomrfooter">
+            <div id="redes">
+                <a id="x" href="https://twitter.com/?lang=es" target="_blank"><img
+                        src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/1227/X-256.png"
+                        alt="X"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img
+                        src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_facebook-512.png"
+                        alt="Facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img
+                        src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-512.png"
+                        alt="Instagram"></a>
+                <a href="https://ar.linkedin.com/" target="_blank"><img
+                        src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-1024.png"
+                        alt="Linkedin"></a>
+            </div>
+            <p id="p1_footer">@2024 Patitas Consultorio Veterinario - Todos los derechos Reservados<br>Diseño web: Comisión 24122 -
+                Grupo 2</p>
+                <p id="p2_footer">@2024 Patitas Consultorio Veterinario<br>Todos los derechos Reservados<br>Diseño web: Comisión 24122 -
+                    Grupo 2</p>
+        </div>
+    </footer>
+    <div class="whatsapp">
+        <a href="https://wa.me/5491108000800" target="_blank"><img
+                src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-512.png"
+                alt=""></a>
+    </div>
+    <script src="./js/style_ingreso.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.all.min.js
+"></script>
+</body>
+</html>
